@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+torch
+transformers
+datasets
+huggingface_hub
+python-multipart

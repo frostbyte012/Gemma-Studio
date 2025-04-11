@@ -1,0 +1,2 @@
+This is a test sentence for fine-tuning.
+Each line should become a training sample.
