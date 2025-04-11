@@ -3,7 +3,7 @@
 Gemma Studio is a web-based application designed to streamline dataset management, model training, and deployment workflows. Built with modern technologies like **React**, **TypeScript**, **Vite**, and **Tailwind CSS**, it provides an intuitive interface for managing datasets, configuring training parameters, monitoring training progress, and exporting trained models.
 
 # Inspiration
-Inspired by GSoC 25 from Google DeepMind, the goal is to create a user-friendly Gemma Model Fine-tuning UI using tools like Streamlit or Gradio. The UI enables users to:
+Inspired by [GSoC 25 from Google DeepMind](https://gist.github.com/dynamicwebpaige/92f7739ad69d2863ac7e2032fe52fbad), the goal is to create a user-friendly Gemma Model Fine-tuning UI using tools like Streamlit or Gradio. The UI enables users to:
 
 - **Dataset Uploading**: Support various formats (CSV, JSONL, text files) with validation, preprocessing, and optional data augmentation.
 - **Hyperparameter Configuration**: Adjust key parameters (learning rate, batch size, epochs) with sensible defaults and tooltips.
@@ -105,9 +105,31 @@ gemma-studio/
    npm run dev
    ```
 
-5. Open your browser and navigate to `http://localhost:3000` to view the application.
+5. Open your browser and navigate to `http://localhost:8080` to view the application.
 
 ---
+
+### Starting the Backend
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+
+2. Install the required Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Start the FastAPI backend server:
+   ```bash
+   uvicorn app:app --host 0.0.0.0 --port 8000
+   ```
+
+4. The backend will be available at:
+   ```
+   http://localhost:8000
+   ```
 
 ## Deployment
 
