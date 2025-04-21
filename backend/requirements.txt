@@ -6,3 +6,10 @@ transformers
 datasets
 huggingface_hub
 python-multipart
+accelerate
+peft
+bitsandbytes
+sentencepiece
+trl
+sentencepiece
+wandb

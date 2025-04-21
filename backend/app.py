@@ -30,7 +30,7 @@ app = FastAPI(
 
 # # Serve React frontend
 # app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
-app.mount("/static", StaticFiles(directory="frontend/assets"), name="static")
+# app.mount("/static", StaticFiles(directory="frontend/assets"), name="static")
 
 @app.get("/")
 async def serve_index():
